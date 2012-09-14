@@ -2,14 +2,17 @@
 #   gem install mysql
 #
 development:
-  adapter: mysql
-  database: customer
-  host: localhost  
-  username: root
-  password: sa
-  port: 3306
-  encoding: utf8
-
+  # adapter: mysql
+  # database: customer
+  # host: localhost  
+  # username: root
+  # password: sa
+  # port: 3306
+  # encoding: utf8
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
